@@ -7,6 +7,8 @@ from src.weather_ai.data_split import (split_train_test)
 from src.weather_ai.train import (train_model)
 from src.weather_ai.prediction import (predict_temperature)
 from src.weather_ai.evaluation import (evaluate_model)
+from src.weather_ai.save_model import (save_trained_model)
+from src.weather_ai.load_model import(load_trained_model)
 file_path = "data/processed/weather_data.csv"
 
 df = load_dataset(file_path)
@@ -45,3 +47,5 @@ model = train_model(X_train, y_train)
 y_pred = predict_temperature(model, X_test)
 
 evaluate_model(y_test, y_pred)
+save_trained_model(model)
+load_trained_model(model)
