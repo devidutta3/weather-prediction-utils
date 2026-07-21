@@ -5,6 +5,7 @@ from src.weather_ai.feature_engineering import (extract_date_features,drop_unuse
 from src.weather_ai.feature_selection import(split_features_target)
 from src.weather_ai.data_split import (split_train_test)
 from src.weather_ai.train import (train_model)
+from src.weather_ai.prediction import (predict_temperature)
 file_path = "data/processed/weather_data.csv"
 
 df = load_dataset(file_path)
@@ -40,3 +41,4 @@ X, y = split_features_target(df)
 X_train, X_test, y_train, y_test = split_train_test(X, y)
 
 model = train_model(X_train, y_train)
+y_pred = predict_temperature(model, X_test)
