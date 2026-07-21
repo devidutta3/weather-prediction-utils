@@ -48,4 +48,4 @@ y_pred = predict_temperature(model, X_test)
 
 evaluate_model(y_test, y_pred)
 save_trained_model(model)
-load_trained_model(model)
+load_trained_model()
