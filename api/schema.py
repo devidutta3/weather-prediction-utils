@@ -10,6 +10,12 @@ class WeatherRequest(BaseModel):
     latitude: float
     longitude: float
     rainfall: float
+
+    season: str
+    station_name: str
+    state: str
+    district: str
+
     year: int
     month_number: int
     day: int

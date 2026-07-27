@@ -1,7 +1,10 @@
 from src.weather_ai.data_loader import load_dataset ,show_dataset
 from src.weather_ai.eda import (check_missing_values, check_duplicates,check_data_types)
 from src.weather_ai.processing import (drop_columns,convert_date,fill_missing_values)
-from src.weather_ai.feature_engineering import (extract_date_features,drop_unused_features,encode_categorical_features)
+from src.weather_ai.feature_engineering import (
+    extract_date_features,
+    drop_unused_features
+)
 from src.weather_ai.feature_selection import(split_features_target)
 from src.weather_ai.data_split import (split_train_test)
 from src.weather_ai.train import (train_model)
@@ -28,13 +31,6 @@ print(df.columns)
 
 print("\nFirst 5 Rows:")
 print(df.head())
-df = encode_categorical_features(df)
-
-print("=" * 50)
-print("Dataset Shape After One-Hot Encoding")
-print("=" * 50)
-print(df.shape)
-
 print("\nFirst 5 Rows")
 print(df.head())
 print("After Use The Feature Selection")
