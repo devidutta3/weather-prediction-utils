@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "weather-prediction-utils"
-version = "0.1.1"
+version = "0.2.0"
 description = "Weather prediction using a trained Machine Learning model."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -47,3 +47,9 @@ include = ["weather_prediction*"]
 
 [tool.setuptools.package-data]
 weather_prediction = ["*.pkl"]
+
+[project.urls]
+Homepage = "https://github.com/devidutta3/weather-prediction-utils"
+Documentation = "https://github.com/devidutta3/weather-prediction-utils"
+Repository = "https://github.com/devidutta3/weather-prediction-utils"
+Issues = "https://github.com/devidutta3/weather-prediction-utils/issues"

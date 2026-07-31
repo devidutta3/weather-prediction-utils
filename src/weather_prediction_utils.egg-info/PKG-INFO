@@ -205,6 +205,10 @@ License:                                  Apache License
            See the License for the specific language governing permissions and
            limitations under the License.
         
+Project-URL: Homepage, https://github.com/devidutta3/weather-prediction-utils
+Project-URL: Documentation, https://github.com/devidutta3/weather-prediction-utils
+Project-URL: Repository, https://github.com/devidutta3/weather-prediction-utils
+Project-URL: Issues, https://github.com/devidutta3/weather-prediction-utils/issues
 Keywords: weather,machine-learning,prediction,temperature,python
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.10
